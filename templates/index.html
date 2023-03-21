@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SavetheWorld</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <div class="banner">
+		  <h1>Feedback Form</h1>
+	  </div>
+     <form action="/submit" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="classno">Class:</label><br>
+      <input type="classno" id="classno" name="classno" required><br><br>
+       
+      <p>How satisfied are you with the school?</p>
+      <label><input type="radio" name="satisfaction" value="very-satisfied"><a href="https://giphy.com/gifs/band-jazz-hamster-JdCz7YXOZAURq/fullscreen">Very satisfied</a></label>
+      <label><input type="radio" name="satisfaction" value="satisfied">Satisfied</label>
+      <label><input type="radio" name="satisfaction" value="neutral">Neutral</label>
+      <label><input type="radio" name="satisfaction" value="dissatisfied">Dissatisfied</label>
+      <label><input type="radio" name="satisfaction" value="very-dissatisfied">Very dissatisfied</label><br><br><br>
+       
+      <label for="feedback">Please Elaborate:</label>
+      <textarea id="feedback" name="feedback"></textarea> 
+
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
+
+  
